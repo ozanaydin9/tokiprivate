@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click2Connect Widget</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-image: url('toki.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Opsiyonel: Arka plana hafif overlay eklemek isterseniz */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.1); /* İsteğe göre ayarlayın veya silin */
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Click2Connect Widget Script -->
+    <script type="text/javascript" src="//toki.alo-tech.com/click2connects/click2connect.js?widget_key=ahRzfm11c3RlcmktaGl6bWV0bGVyaXIhCxIUQ2xpY2syQ29ubmVjdFBhY2thZ2UYgIC6xcGTxQgMogERdG9raS5hbG8tdGVjaC5jb20"></script>
+    <script type="text/javascript">
+        startWidget();
+    </script>
+</body>
+</html>
